@@ -12,7 +12,7 @@ function main() {
 
     if (seen.has(2020 - num)) {
       console.log(num * (2020 - num));
-      continue;
+      break;
     }
   }
 }
