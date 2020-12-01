@@ -4,6 +4,9 @@ const path = require('path');
 const input = fs.readFileSync(path.join(__dirname, 'input.txt'), 'utf8');
 const sanitizedInput = input.split('\n').map(Number);
 
-function main() {}
+function main() {
+  const seen = new Set();
+  sanitizedInput.forEach((num) => seen.add(num));
+}
 
 main();
