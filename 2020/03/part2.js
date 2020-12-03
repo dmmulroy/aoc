@@ -17,7 +17,7 @@ for (let rowIdx = 1; rowIdx < map.length; rowIdx++) {
   const row = map[rowIdx];
 
   slopes.forEach((slope) => {
-    if (slope[1] === 1 || rowIdx % slope[1] === 0) {
+    if (rowIdx % slope[1] === 0) {
       const columnIdx = (rowIdx / (slope[1] / slope[0])) % row.length;
 
       if (row[columnIdx] === '#') {
